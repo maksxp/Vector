@@ -18,6 +18,10 @@ public Vector(double x, double y, double z) {
 public static Vector sum (Vector a, Vector b){
 	return new Vector ((a.x+b.x),(a.y+b.y),(a.z+b.z));
 }
+//this method produces the same result as static sum(Vector a, Vector b)
+public Vector sum (Vector a){
+	return new Vector ((a.x+this.x),(a.y+this.y),(a.z+this.z));
+}
 public static double scalarMultiply (Vector a, Vector b){
 	return (a.x*b.x)+(a.y*b.y)+(a.z*b.z);
 }
